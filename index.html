@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Convergence Example</title>
-  <style type="text/css">
-    textarea {
-      margin-top: 20px;
-      height: 300px;
-      width: 300px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/rxjs@6.6.2/bundles/rxjs.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@convergence/convergence/convergence.global.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@convergence/input-element-bindings/browser/convergence-input-element-bindings.min.js"></script>
-</head>
-<body>
-  <h2>A Collaborative Text Area</h2>
-  <div>(Open this in two browser windows side-by-side and start typing!)</div>
-  <textarea id="textarea"></textarea>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@convergence/input-element-bindings/browser/convergence-input-element-bindings.min.js"></script>
   <script type="text/javascript" src="config.js"></script>
-  <script type="text/javascript" src="example.js"></script>
+  <!-- <script type="text/javascript" src="example.js"></script> -->
+
+
+</head>
+
+<body>
+  <h2>A chat app!</h2>
+  <textarea id="textarea"></textarea>
+
+  <div id="divbut">
+    <button-counter></button-counter>
+    <chat-bubble/>
+  </div>
+
+  <div id="chat-room">
+    <chat-room-comp></chat-room-comp>
+  </div>
 </body>
+
 </html>
+
+<script type="text/javascript" src="chat.js"></script>
+<script type="text/javascript" src="components.js"></script>

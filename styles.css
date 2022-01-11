@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+}
+
+.chat-bubble {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    width: 200px;
+    border-radius: 8px;
+    background-color: rgb(54, 121, 255);
+    color: white;
+}
+
+.chat-bubble > p {
+    padding-left: 5px;
+}
