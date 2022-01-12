@@ -2,14 +2,26 @@ body {
     font-family: sans-serif;
 }
 
+li {
+    list-style-type: none;
+}
+
 .chat-bubble {
     display: flex;
     align-items: center;
     height: 24px;
     width: 200px;
     border-radius: 8px;
+}
+
+.blue {
     background-color: rgb(54, 121, 255);
     color: white;
+}
+
+.grey {
+    background-color: grey;
+    color: black;
 }
 
 .chat-bubble > p {
